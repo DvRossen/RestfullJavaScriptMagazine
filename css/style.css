@@ -1,0 +1,163 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+/* header styling */
+
+
+.header {
+    width: available;
+    height: 10%;
+    background-color: mediumpurple;
+    border-right-style: outset;
+    border-bottom-style: inset;
+    border-width: 30px;
+    border-color: mediumpurple;
+    border-bottom-color: rebeccapurple;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    padding: 35px;
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+/*body styling */
+.main {
+    background-image: linear-gradient(to bottom left, lightcoral, hotpink, mediumpurple);
+    position:absolute;
+    height: available;
+    min-height: 100vh;
+    min-width: 100%;
+    width: available;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.favorite {
+    background-image: linear-gradient(to top right, goldenrod, mediumorchid);
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    padding: 0;
+    margin: 20px;
+    margin-bottom: 0;
+    text-align: center;
+
+
+}
+
+/*card styling*/
+.card {
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    background-image: linear-gradient(to top right, crimson, mediumpurple);
+    padding: 0;
+    margin: 20px;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+
+
+.content {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "Berlin Sans FB", serif;
+}
+
+img {
+    border-top: 2px solid dimgray;
+    border-left: 2px solid dimgray;
+    border-bottom: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 0;
+    margin-top: 20px ;
+    width: 200px;
+    height: 200px;
+}
+
+
+.modal-close, .buttonFav, .buttonDetail{
+    margin:10px;
+    width:90px;
+    height: 30px;
+    background-color: mediumorchid;
+    border: 5px outset darkorchid;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: orchid;
+    border: 5px outset mediumorchid;
+    border-radius: 30px;
+}
+
+
+/*scrollbar (chrome only) */
+::-webkit-scrollbar-track {
+    background-color: cornflowerblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: mediumpurple;
+}
+/* modal stuff */
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal h2 {
+    font-family: "Calibri Light", sans-serif;
+    font-size: 0.8em;
+}
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.modal-bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.modal-container {
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom left, lightcoral, hotpink, mediumpurple);
+    position: relative;
+    padding: 30px;
+    max-width: 200px;
+}
+
+
+.modal-content h1 {
+    margin: 0;
+}
+
+.modal-content img {
+    align-self: center;
+}
